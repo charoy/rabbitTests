@@ -12,7 +12,7 @@ import com.rabbitmq.client.QueueingConsumer;
 public class Recv {
 
     private final static String QUEUE_NAME = "hello";
-    private final static String hostname ="ec2-50-19-7-134.compute-1.amazonaws.com";
+    private final static String hostname ="ec2-54-73-194-42.eu-west-1.compute.amazonaws.com";
     private final static int port=5672;
 
 

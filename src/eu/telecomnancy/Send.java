@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class Send {
     private final static String QUEUE_NAME = "hello";
-    private final static String hostname ="ec2-50-19-7-134.compute-1.amazonaws.com";
+    private final static String hostname ="ec2-54-73-194-42.eu-west-1.compute.amazonaws.com";
     private final static int port=5672;
 
     public static void main(String[] args) throws IOException {
@@ -23,7 +23,7 @@ public class Send {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        String message = "Hello World! pouet crap";
+        String message = "Hello gugusse! tutut crap";
         channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
         System.out.println(" [x] Sent '" + message + "'");
         channel.close();
